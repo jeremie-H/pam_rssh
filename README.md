@@ -26,6 +26,15 @@ Prerequisites:
 - libpam
 - Rust (with Cargo)
 
+(JHA) pre-requis :  
+```
+git clone https://github.com/jeremie-H/pam-rs.git
+git submodule update --init --recursive
+sudo apt install build-essential libssl-dev pkg-config
+curl https://sh.rustup.rs -sSf | sh
+rustup toolchain install stable
+```
+
 ```
 cargo build --release
 cp target/release/libpam_rssh.so /usr/local/lib/
